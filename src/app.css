@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to left, #0089ba, #008f7a);
+}
+
+.card{
+    width: 500px;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 5px 10px #033f49;
+    border-radius: 10px;
+}
+
+.card .img-card{
+    background: url(../wimg/venta.jpg);
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+}
+.card .content{
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50px 150px 50px;
+    padding: 10px 15px;
+}
+
+.card .content .btn-container btn{
+    background: #0089ba;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}

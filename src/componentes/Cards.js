@@ -1,23 +1,20 @@
-import "../app.css";
-export function Cards(props) {
+export function Cards (props){
+
+
+  let btn = info => console.log(info.target.id)
+  let inp = info => console.log(info.target.value)
+
+
   return (
     <>
-      <div className="card">
-        <div className="img-card"></div>
-        <div className="content">
-          <div className="title">
-            <h1>Detalles de ventas</h1>
-            <p className="details">Nombre: {props.name}</p>
-            <p className="details">Apellido: {props.last_name}</p>
-            <p className="details">Monto: {props.monto}</p>
-            <p className="details">Email: {props.email}</p>
-            <p className="details">Telefono: {props.telefono}</p>
-          </div>
-          <div className="btn-container">
-            <button>Enviar</button>
-          </div>
-        </div>
-      </div>
+    <h1>Usuarios</h1>
+    <p><b>Nombre:</b> {props.name}</p>
+    <p><b>Apellido:</b> {props.last_name}</p>
+    <p><b>Saldo:</b> {props.monto}</p>
+    <p><b>Email:</b> {props.email}</p>
+    <p><b>Telfono:</b> {props.telefono}</p>
+    <button id="Nro-id" onClick={btn}>Imprimir Detalles</button>
+    <input onChange={inp}></input>
     </>
-  );
+  )
 }
